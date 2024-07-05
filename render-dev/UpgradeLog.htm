@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          迁移报告
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          迁移报告 - </h1><div id="content"><h2 _locID="OverviewTitle">概述</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">项目</th><th _locID="PathTableHeader">路径</th><th _locID="ErrorsTableHeader">错误</th><th _locID="WarningsTableHeader">警告</th><th _locID="MessagesTableHeader">消息</th></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Assembly-CSharp">Assembly-CSharp</a></strong></td><td>Assembly-CSharp.csproj</td><td class="textCentered"><a href="#Assembly-CSharpError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Assembly-CSharp-Editor">Assembly-CSharp-Editor</a></strong></td><td>Assembly-CSharp-Editor.csproj</td><td class="textCentered"><a href="#Assembly-CSharp-EditorError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Assembly-CSharp-Editor-firstpass">Assembly-CSharp-Editor-firstpass</a></strong></td><td>Assembly-CSharp-Editor-firstpass.csproj</td><td class="textCentered"><a href="#Assembly-CSharp-Editor-firstpassError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#DocCodeExamples">DocCodeExamples</a></strong></td><td>DocCodeExamples.csproj</td><td class="textCentered"><a href="#DocCodeExamplesError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#JetBrains.Frontend.2019.4">JetBrains.Frontend.2019.4</a></strong></td><td>JetBrains.Frontend.2019.4.csproj</td><td class="textCentered"><a href="#JetBrains.Frontend.2019.4Error">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#JetBrains.Frontend.2020.2">JetBrains.Frontend.2020.2</a></strong></td><td>JetBrains.Frontend.2020.2.csproj</td><td class="textCentered"><a href="#JetBrains.Frontend.2020.2Error">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#JetBrains.Frontend.2021.2">JetBrains.Frontend.2021.2</a></strong></td><td>JetBrains.Frontend.2021.2.csproj</td><td class="textCentered"><a href="#JetBrains.Frontend.2021.2Error">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#JetBrains.Frontend.2022.2">JetBrains.Frontend.2022.2</a></strong></td><td>JetBrains.Frontend.2022.2.csproj</td><td class="textCentered"><a href="#JetBrains.Frontend.2022.2Error">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#OverloadedFunctionPointers">OverloadedFunctionPointers</a></strong></td><td>OverloadedFunctionPointers.csproj</td><td class="textCentered"><a href="#OverloadedFunctionPointersError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#SeparateAssembly">SeparateAssembly</a></strong></td><td>SeparateAssembly.csproj</td><td class="textCentered"><a href="#SeparateAssemblyError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Burst">Unity.Burst</a></strong></td><td>Unity.Burst.csproj</td><td class="textCentered"><a href="#Unity.BurstError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Burst.CodeGen">Unity.Burst.CodeGen</a></strong></td><td>Unity.Burst.CodeGen.csproj</td><td class="textCentered"><a href="#Unity.Burst.CodeGenError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Burst.Editor">Unity.Burst.Editor</a></strong></td><td>Unity.Burst.Editor.csproj</td><td class="textCentered"><a href="#Unity.Burst.EditorError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Burst.Editor.Tests">Unity.Burst.Editor.Tests</a></strong></td><td>Unity.Burst.Editor.Tests.csproj</td><td class="textCentered"><a href="#Unity.Burst.Editor.TestsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Burst.Tests.UnitTests">Unity.Burst.Tests.UnitTests</a></strong></td><td>Unity.Burst.Tests.UnitTests.csproj</td><td class="textCentered"><a href="#Unity.Burst.Tests.UnitTestsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Collections">Unity.Collections</a></strong></td><td>Unity.Collections.csproj</td><td class="textCentered"><a href="#Unity.CollectionsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Collections.BurstCompatibilityGen">Unity.Collections.BurstCompatibilityGen</a></strong></td><td>Unity.Collections.BurstCompatibilityGen.csproj</td><td class="textCentered"><a href="#Unity.Collections.BurstCompatibilityGenError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Collections.CodeGen">Unity.Collections.CodeGen</a></strong></td><td>Unity.Collections.CodeGen.csproj</td><td class="textCentered"><a href="#Unity.Collections.CodeGenError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Collections.DocCodeSamples">Unity.Collections.DocCodeSamples</a></strong></td><td>Unity.Collections.DocCodeSamples.csproj</td><td class="textCentered"><a href="#Unity.Collections.DocCodeSamplesError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Collections.Editor">Unity.Collections.Editor</a></strong></td><td>Unity.Collections.Editor.csproj</td><td class="textCentered"><a href="#Unity.Collections.EditorError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Collections.Tests">Unity.Collections.Tests</a></strong></td><td>Unity.Collections.Tests.csproj</td><td class="textCentered"><a href="#Unity.Collections.TestsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Collections.Tests.Playmode">Unity.Collections.Tests.Playmode</a></strong></td><td>Unity.Collections.Tests.Playmode.csproj</td><td class="textCentered"><a href="#Unity.Collections.Tests.PlaymodeError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Mathematics">Unity.Mathematics</a></strong></td><td>Unity.Mathematics.csproj</td><td class="textCentered"><a href="#Unity.MathematicsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Mathematics.Editor">Unity.Mathematics.Editor</a></strong></td><td>Unity.Mathematics.Editor.csproj</td><td class="textCentered"><a href="#Unity.Mathematics.EditorError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Mathematics.Tests">Unity.Mathematics.Tests</a></strong></td><td>Unity.Mathematics.Tests.csproj</td><td class="textCentered"><a href="#Unity.Mathematics.TestsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Nuget.Mono-Cecil">Unity.Nuget.Mono-Cecil</a></strong></td><td>Unity.Nuget.Mono-Cecil.csproj</td><td class="textCentered"><a href="#Unity.Nuget.Mono-CecilError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Rider.Editor">Unity.Rider.Editor</a></strong></td><td>Unity.Rider.Editor.csproj</td><td class="textCentered"><a href="#Unity.Rider.EditorError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.TextMeshPro">Unity.TextMeshPro</a></strong></td><td>Unity.TextMeshPro.csproj</td><td class="textCentered"><a href="#Unity.TextMeshProError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.TextMeshPro.Editor">Unity.TextMeshPro.Editor</a></strong></td><td>Unity.TextMeshPro.Editor.csproj</td><td class="textCentered"><a href="#Unity.TextMeshPro.EditorError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.TextMeshPro.Editor.Tests">Unity.TextMeshPro.Editor.Tests</a></strong></td><td>Unity.TextMeshPro.Editor.Tests.csproj</td><td class="textCentered"><a href="#Unity.TextMeshPro.Editor.TestsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.TextMeshPro.Tests">Unity.TextMeshPro.Tests</a></strong></td><td>Unity.TextMeshPro.Tests.csproj</td><td class="textCentered"><a href="#Unity.TextMeshPro.TestsError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Timeline">Unity.Timeline</a></strong></td><td>Unity.Timeline.csproj</td><td class="textCentered"><a href="#Unity.TimelineError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Unity.Timeline.Editor">Unity.Timeline.Editor</a></strong></td><td>Unity.Timeline.Editor.csproj</td><td class="textCentered"><a href="#Unity.Timeline.EditorError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#UnityEditor.TestRunner">UnityEditor.TestRunner</a></strong></td><td>UnityEditor.TestRunner.csproj</td><td class="textCentered"><a href="#UnityEditor.TestRunnerError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#UnityEngine.TestRunner">UnityEngine.TestRunner</a></strong></td><td>UnityEngine.TestRunner.csproj</td><td class="textCentered"><a href="#UnityEngine.TestRunnerError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">解决方案</span></a></strong></td><td>render-dev.sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">1</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">解决方案和项目</h2><div id="messages"><a name="Assembly-CSharp" /><h3>Assembly-CSharp</h3><table><tr id="Assembly-CSharpHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassAssembly-CSharp"><td class="IconErrorEncoded"><a name="Assembly-CSharpError" /></td><td class="messageCell"><strong>Assembly-CSharp.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Assembly-CSharp-Editor" /><h3>Assembly-CSharp-Editor</h3><table><tr id="Assembly-CSharp-EditorHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassAssembly-CSharp-Editor"><td class="IconErrorEncoded"><a name="Assembly-CSharp-EditorError" /></td><td class="messageCell"><strong>Assembly-CSharp-Editor.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Assembly-CSharp-Editor-firstpass" /><h3>Assembly-CSharp-Editor-firstpass</h3><table><tr id="Assembly-CSharp-Editor-firstpassHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassAssembly-CSharp-Editor-firstpass"><td class="IconErrorEncoded"><a name="Assembly-CSharp-Editor-firstpassError" /></td><td class="messageCell"><strong>Assembly-CSharp-Editor-firstpass.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="DocCodeExamples" /><h3>DocCodeExamples</h3><table><tr id="DocCodeExamplesHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassDocCodeExamples"><td class="IconErrorEncoded"><a name="DocCodeExamplesError" /></td><td class="messageCell"><strong>DocCodeExamples.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="JetBrains.Frontend.2019.4" /><h3>JetBrains.Frontend.2019.4</h3><table><tr id="JetBrains.Frontend.2019.4HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassJetBrains.Frontend.2019.4"><td class="IconErrorEncoded"><a name="JetBrains.Frontend.2019.4Error" /></td><td class="messageCell"><strong>JetBrains.Frontend.2019.4.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="JetBrains.Frontend.2020.2" /><h3>JetBrains.Frontend.2020.2</h3><table><tr id="JetBrains.Frontend.2020.2HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassJetBrains.Frontend.2020.2"><td class="IconErrorEncoded"><a name="JetBrains.Frontend.2020.2Error" /></td><td class="messageCell"><strong>JetBrains.Frontend.2020.2.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="JetBrains.Frontend.2021.2" /><h3>JetBrains.Frontend.2021.2</h3><table><tr id="JetBrains.Frontend.2021.2HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassJetBrains.Frontend.2021.2"><td class="IconErrorEncoded"><a name="JetBrains.Frontend.2021.2Error" /></td><td class="messageCell"><strong>JetBrains.Frontend.2021.2.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="JetBrains.Frontend.2022.2" /><h3>JetBrains.Frontend.2022.2</h3><table><tr id="JetBrains.Frontend.2022.2HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassJetBrains.Frontend.2022.2"><td class="IconErrorEncoded"><a name="JetBrains.Frontend.2022.2Error" /></td><td class="messageCell"><strong>JetBrains.Frontend.2022.2.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="OverloadedFunctionPointers" /><h3>OverloadedFunctionPointers</h3><table><tr id="OverloadedFunctionPointersHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassOverloadedFunctionPointers"><td class="IconErrorEncoded"><a name="OverloadedFunctionPointersError" /></td><td class="messageCell"><strong>OverloadedFunctionPointers.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="SeparateAssembly" /><h3>SeparateAssembly</h3><table><tr id="SeparateAssemblyHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassSeparateAssembly"><td class="IconErrorEncoded"><a name="SeparateAssemblyError" /></td><td class="messageCell"><strong>SeparateAssembly.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Burst" /><h3>Unity.Burst</h3><table><tr id="Unity.BurstHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Burst"><td class="IconErrorEncoded"><a name="Unity.BurstError" /></td><td class="messageCell"><strong>Unity.Burst.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Burst.CodeGen" /><h3>Unity.Burst.CodeGen</h3><table><tr id="Unity.Burst.CodeGenHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Burst.CodeGen"><td class="IconErrorEncoded"><a name="Unity.Burst.CodeGenError" /></td><td class="messageCell"><strong>Unity.Burst.CodeGen.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Burst.Editor" /><h3>Unity.Burst.Editor</h3><table><tr id="Unity.Burst.EditorHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Burst.Editor"><td class="IconErrorEncoded"><a name="Unity.Burst.EditorError" /></td><td class="messageCell"><strong>Unity.Burst.Editor.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Burst.Editor.Tests" /><h3>Unity.Burst.Editor.Tests</h3><table><tr id="Unity.Burst.Editor.TestsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Burst.Editor.Tests"><td class="IconErrorEncoded"><a name="Unity.Burst.Editor.TestsError" /></td><td class="messageCell"><strong>Unity.Burst.Editor.Tests.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Burst.Tests.UnitTests" /><h3>Unity.Burst.Tests.UnitTests</h3><table><tr id="Unity.Burst.Tests.UnitTestsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Burst.Tests.UnitTests"><td class="IconErrorEncoded"><a name="Unity.Burst.Tests.UnitTestsError" /></td><td class="messageCell"><strong>Unity.Burst.Tests.UnitTests.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Collections" /><h3>Unity.Collections</h3><table><tr id="Unity.CollectionsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Collections"><td class="IconErrorEncoded"><a name="Unity.CollectionsError" /></td><td class="messageCell"><strong>Unity.Collections.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Collections.BurstCompatibilityGen" /><h3>Unity.Collections.BurstCompatibilityGen</h3><table><tr id="Unity.Collections.BurstCompatibilityGenHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Collections.BurstCompatibilityGen"><td class="IconErrorEncoded"><a name="Unity.Collections.BurstCompatibilityGenError" /></td><td class="messageCell"><strong>Unity.Collections.BurstCompatibilityGen.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Collections.CodeGen" /><h3>Unity.Collections.CodeGen</h3><table><tr id="Unity.Collections.CodeGenHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Collections.CodeGen"><td class="IconErrorEncoded"><a name="Unity.Collections.CodeGenError" /></td><td class="messageCell"><strong>Unity.Collections.CodeGen.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Collections.DocCodeSamples" /><h3>Unity.Collections.DocCodeSamples</h3><table><tr id="Unity.Collections.DocCodeSamplesHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Collections.DocCodeSamples"><td class="IconErrorEncoded"><a name="Unity.Collections.DocCodeSamplesError" /></td><td class="messageCell"><strong>Unity.Collections.DocCodeSamples.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Collections.Editor" /><h3>Unity.Collections.Editor</h3><table><tr id="Unity.Collections.EditorHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Collections.Editor"><td class="IconErrorEncoded"><a name="Unity.Collections.EditorError" /></td><td class="messageCell"><strong>Unity.Collections.Editor.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Collections.Tests" /><h3>Unity.Collections.Tests</h3><table><tr id="Unity.Collections.TestsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Collections.Tests"><td class="IconErrorEncoded"><a name="Unity.Collections.TestsError" /></td><td class="messageCell"><strong>Unity.Collections.Tests.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Collections.Tests.Playmode" /><h3>Unity.Collections.Tests.Playmode</h3><table><tr id="Unity.Collections.Tests.PlaymodeHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Collections.Tests.Playmode"><td class="IconErrorEncoded"><a name="Unity.Collections.Tests.PlaymodeError" /></td><td class="messageCell"><strong>Unity.Collections.Tests.Playmode.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Mathematics" /><h3>Unity.Mathematics</h3><table><tr id="Unity.MathematicsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Mathematics"><td class="IconErrorEncoded"><a name="Unity.MathematicsError" /></td><td class="messageCell"><strong>Unity.Mathematics.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Mathematics.Editor" /><h3>Unity.Mathematics.Editor</h3><table><tr id="Unity.Mathematics.EditorHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Mathematics.Editor"><td class="IconErrorEncoded"><a name="Unity.Mathematics.EditorError" /></td><td class="messageCell"><strong>Unity.Mathematics.Editor.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Mathematics.Tests" /><h3>Unity.Mathematics.Tests</h3><table><tr id="Unity.Mathematics.TestsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Mathematics.Tests"><td class="IconErrorEncoded"><a name="Unity.Mathematics.TestsError" /></td><td class="messageCell"><strong>Unity.Mathematics.Tests.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Nuget.Mono-Cecil" /><h3>Unity.Nuget.Mono-Cecil</h3><table><tr id="Unity.Nuget.Mono-CecilHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Nuget.Mono-Cecil"><td class="IconErrorEncoded"><a name="Unity.Nuget.Mono-CecilError" /></td><td class="messageCell"><strong>Unity.Nuget.Mono-Cecil.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Rider.Editor" /><h3>Unity.Rider.Editor</h3><table><tr id="Unity.Rider.EditorHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Rider.Editor"><td class="IconErrorEncoded"><a name="Unity.Rider.EditorError" /></td><td class="messageCell"><strong>Unity.Rider.Editor.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.TextMeshPro" /><h3>Unity.TextMeshPro</h3><table><tr id="Unity.TextMeshProHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.TextMeshPro"><td class="IconErrorEncoded"><a name="Unity.TextMeshProError" /></td><td class="messageCell"><strong>Unity.TextMeshPro.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.TextMeshPro.Editor" /><h3>Unity.TextMeshPro.Editor</h3><table><tr id="Unity.TextMeshPro.EditorHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.TextMeshPro.Editor"><td class="IconErrorEncoded"><a name="Unity.TextMeshPro.EditorError" /></td><td class="messageCell"><strong>Unity.TextMeshPro.Editor.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.TextMeshPro.Editor.Tests" /><h3>Unity.TextMeshPro.Editor.Tests</h3><table><tr id="Unity.TextMeshPro.Editor.TestsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.TextMeshPro.Editor.Tests"><td class="IconErrorEncoded"><a name="Unity.TextMeshPro.Editor.TestsError" /></td><td class="messageCell"><strong>Unity.TextMeshPro.Editor.Tests.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.TextMeshPro.Tests" /><h3>Unity.TextMeshPro.Tests</h3><table><tr id="Unity.TextMeshPro.TestsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.TextMeshPro.Tests"><td class="IconErrorEncoded"><a name="Unity.TextMeshPro.TestsError" /></td><td class="messageCell"><strong>Unity.TextMeshPro.Tests.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Timeline" /><h3>Unity.Timeline</h3><table><tr id="Unity.TimelineHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Timeline"><td class="IconErrorEncoded"><a name="Unity.TimelineError" /></td><td class="messageCell"><strong>Unity.Timeline.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Unity.Timeline.Editor" /><h3>Unity.Timeline.Editor</h3><table><tr id="Unity.Timeline.EditorHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnity.Timeline.Editor"><td class="IconErrorEncoded"><a name="Unity.Timeline.EditorError" /></td><td class="messageCell"><strong>Unity.Timeline.Editor.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="UnityEditor.TestRunner" /><h3>UnityEditor.TestRunner</h3><table><tr id="UnityEditor.TestRunnerHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnityEditor.TestRunner"><td class="IconErrorEncoded"><a name="UnityEditor.TestRunnerError" /></td><td class="messageCell"><strong>UnityEditor.TestRunner.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="UnityEngine.TestRunner" /><h3>UnityEngine.TestRunner</h3><table><tr id="UnityEngine.TestRunnerHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassUnityEngine.TestRunner"><td class="IconErrorEncoded"><a name="UnityEngine.TestRunnerError" /></td><td class="messageCell"><strong>UnityEngine.TestRunner.csproj:
+        </strong><span>找不到此项目类型所基于的应用程序。有关更多信息，请尝试此链接: http://go.microsoft.com/fwlink/?LinkID=299083&amp;projecttype=E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1</span></td></tr></table><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">解决方案</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          显示 1 其他消息
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>render-dev.sln:
+        </strong><span>解决方案文件不需要迁移。</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          隐藏 1 其他消息
+        </a></td></tr></table></div></div></body></html>

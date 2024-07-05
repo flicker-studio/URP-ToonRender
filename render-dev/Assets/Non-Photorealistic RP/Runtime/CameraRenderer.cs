@@ -8,23 +8,29 @@ namespace Non_Photorealistic_RP.Runtime
     /// </summary>
     public partial class CameraRenderer
     {
-        private                 Camera                  _camera;
-        private                 ScriptableRenderContext _context;
-        private                 CullingResults          _cullingResults;
-        private static readonly ShaderTagId             UnlitShaderTagId = new("SRPDefaultUnlit");
-        private const           string                  BufferName       = "Render Camera";
+        private const           string      BufferName       = "Render Camera";
+        private static readonly ShaderTagId UnlitShaderTagId = new("SRPDefaultUnlit");
 
         private readonly CommandBuffer _buffer = new()
                                                  {
                                                      name = BufferName
                                                  };
 
+        private Camera                  _camera;
+        private ScriptableRenderContext _context;
+        private CullingResults          _cullingResults;
+
         /// <summary>
         ///     command a rendering to one camera
         /// </summary>
         /// <param name="context">defines state and drawing commands that custom render pipelines use</param>
         /// <param name="camera">the camera you want to render</param>
-        public void Render(ScriptableRenderContext context, Camera camera)
+        /// <param name="useDynamicBatching">enable dynamic batching</param>
+        /// <param name="useGPUInstancing">enable gpu instancing</param>
+        public void Render(ScriptableRenderContext context,
+                           Camera                  camera,
+                           bool                    useDynamicBatching,
+                           bool                    useGPUInstancing)
         {
             _context = context;
             _camera  = camera;
@@ -33,7 +39,7 @@ namespace Non_Photorealistic_RP.Runtime
             PrepareForSceneWindow();
             Cull();
             Setup();
-            DrawVisibleGeometry();
+            DrawVisibleGeometry(useDynamicBatching, useGPUInstancing);
             DrawUnsupportedShaders();
             DrawGizmos();
             Submit();
@@ -64,14 +70,19 @@ namespace Non_Photorealistic_RP.Runtime
             _context.Submit();
         }
 
-        private void DrawVisibleGeometry()
+        private void DrawVisibleGeometry(bool useDynamicBatching, bool useGPUInstancing)
         {
             //draw the opaque object first
             var sortingSettings = new SortingSettings(_camera)
                                   {
                                       criteria = SortingCriteria.CommonOpaque
                                   };
-            var drawingSettings   = new DrawingSettings(UnlitShaderTagId, sortingSettings);
+            var drawingSettings = new DrawingSettings(UnlitShaderTagId, sortingSettings)
+                                  {
+                                      enableDynamicBatching = useDynamicBatching,
+                                      enableInstancing      = useGPUInstancing
+                                  };
+
             var filteringSettings = new FilteringSettings(RenderQueueRange.opaque);
             _context.DrawRenderers(_cullingResults, ref drawingSettings, ref filteringSettings);
 

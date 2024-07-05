@@ -10,13 +10,17 @@ namespace Non_Photorealistic_RP.Runtime
     public class NPRenderPipeline : RenderPipeline
     {
         private readonly CameraRenderer _renderer = new();
+        private readonly bool           useDynamicBatching;
+        private readonly bool           useGPUInstancing;
 
         /// <summary>
         ///     Enable SRP batch processing
         /// </summary>
-        public NPRenderPipeline()
+        public NPRenderPipeline(bool useDynamicBatching, bool useGPUInstancing, bool useSRPBatcher)
         {
-            GraphicsSettings.useScriptableRenderPipelineBatching = true;
+            this.useDynamicBatching                              = useDynamicBatching;
+            this.useGPUInstancing                                = useGPUInstancing;
+            GraphicsSettings.useScriptableRenderPipelineBatching = useSRPBatcher;
         }
 
         ///<inheritdoc />
@@ -27,7 +31,7 @@ namespace Non_Photorealistic_RP.Runtime
         ///<inheritdoc />
         protected override void Render(ScriptableRenderContext context, List<Camera> cameras)
         {
-            foreach (var camera in cameras) _renderer.Render(context, camera);
+            foreach (var camera in cameras) _renderer.Render(context, camera, useDynamicBatching, useGPUInstancing);
         }
     }
 }
